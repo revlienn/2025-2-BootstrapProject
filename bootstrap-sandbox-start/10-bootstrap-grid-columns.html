@@ -1,52 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <title>Bootstrap Sandbox | Bootstrap Grid Columns</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-5">Bootstrap Grid Columns</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+		<title>Bootstrap Sandbox | Bootstrap Grid Columns</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="mb-5">Bootstrap Grid Columns</h1>
 
-      <!-- Basic Grid Layout -->
+			<!-- Basic Grid Layout -->
+			<div class="row">
+				<div class="col bg-light border">1 of 2</div>
+				<div class="col bg-light border">2 of 2</div>
+			</div>
+			<div class="row">
+				<div class="col bg-light border">1 of 3</div>
+				<div class="col bg-light border">2 of 3</div>
+				<div class="col bg-light border">2 of 3</div>
+			</div>
 
-      <br /><br />
+			<br /><br />
 
-      <!-- Column Sizes -->
+			<!-- Column Sizes -->
+			<div class="row">
+				<div class="col-6 bg-light border">1 of 2</div>
+				<div class="col-6 bg-light border">2 of 2</div>
+			</div>
+			<div class="row">
+				<div class="col-4 bg-light border border-success">1 of 2</div>
+				<div class="col-8 bg-light border border-success">2 of 2</div>
+			</div>
 
-      <br /><br />
+			<br /><br />
 
-      <!-- Responsive Grid -->
+			<!-- Responsive Grid -->
+			<div class="row">
+				<div class="col-md-6 bg-light border border-info">1 of 2</div>
+				<div class="col-md-6 bg-light border border-info">2 of 2</div>
+			</div>
+			<br />
+			<div class="row">
+				<div class="col-sm-6 col-lg-3 bg-light border border-secondary">
+					1 of 4
+				</div>
+				<div class="col-sm-6 col-lg-3 bg-light border border-secondary">
+					2 of 4
+				</div>
+				<div class="col-sm-6 col-lg-3 bg-light border border-secondary">
+					3 of 4
+				</div>
+				<div class="col-sm-6 col-lg-3 bg-light border border-secondary">
+					4 of 4
+				</div>
+			</div>
 
-      <br /><br />
+			<br /><br />
 
-      <!-- Row Cols -->
+			<!-- Row Cols -->
+			<div class="row row-cols-1 row-cols-lg-3">
+				<div class="col bg-light border border-danger">Column</div>
+				<div class="col bg-light border border-danger">Column</div>
+				<div class="col bg-light border border-danger">Column</div>
+				<div class="col bg-light border border-danger">Column</div>
+				<div class="col bg-light border border-danger">Column</div>
+				<div class="col bg-light border border-danger">Column</div>
+				<div class="col bg-light border border-danger">Column</div>
+				<div class="col bg-light border border-danger">Column</div>
+				<div class="col bg-light border border-danger">Column</div>
+			</div>
 
-      <br /><br />
+			<br /><br />
 
-      <br /><br />
+			<br /><br />
 
-      <!-- Nesting -->
+			<!-- Nesting -->
+			<div class="row">
+				<div class="col bg-light border border-dark pb-3">1</div>
+				<div class="col bg-light border border-dark pb-3">2</div>
+				<div class="col bg-light border border-dark pb-3">
+					<div class="row">
+						<div class="col bg-success text-white">3a</div>
+						<div class="col bg-success text-white">3b</div>
+					</div>
+				</div>
+			</div>
 
-      <br /><br />
+			<br /><br />
 
-      <!-- Gutters -->
+			<!-- Gutters -->
+			<div class="row g-1">
+				<div class="col-md-4">
+					<div class="p-3 text-bg-primary">1</div>
+				</div>
+				<div class="col-md-4">
+					<div class="p-3 text-bg-primary">2</div>
+				</div>
+				<div class="col-md-4">
+					<div class="p-3 text-bg-primary">3</div>
+				</div>
+			</div>
 
-      <br /><br />
+			<br /><br />
 
-      <!-- Offsetting Columns -->
+			<!-- Offsetting Columns -->
+			<div class="row">
+				<div class="col-md-4 offset-4">
+					<div class="p-3 text-bg-primary">2</div>
+				</div>
+				<div class="col-md-4">
+					<div class="p-3 text-bg-primary">3</div>
+				</div>
+			</div>
+			<br /><br />
 
-      <br /><br />
+			<div class="row offset-3">
+				<div class="col-md-6 border border-primary bg-light">
+					hello world pushed to the middle
+				</div>
+			</div>
 
-      <!-- Ordering -->
+			<!-- Ordering -->
+			<!-- if you use order, notice must use for all col -->
+			<div class="row">
+				<div class="col bg-warning border border-dark order-2">1</div>
+				<div class="col bg-warning border border-dark order-4">2</div>
+				<div class="col bg-warning border border-dark order-3">3</div>
+				<div class="col bg-warning border border-dark order-1">4</div>
+			</div>
 
-      <!-- Don't go past here -->
-    </div>
-    <div style="margin-top: 350px"></div>
+			<!-- Don't go past here -->
+		</div>
+		<div style="margin-top: 350px"></div>
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+		<script src="./assets/js/bootstrap.bundle.min.js"></script>
+	</body>
 </html>
