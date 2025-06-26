@@ -1,42 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <title>Bootstrap Sandbox | Spinners</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-5">Spinners</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+		<title>Bootstrap Sandbox | Spinners</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="mb-5">Spinners</h1>
 
-      <!-- Border Spinner -->
+			<!-- Border Spinner -->
+			<div class="spinner-border text-success" role="status">
+				<span class="visually-hidden"></span>
+			</div>
 
-      <br /><br />
+			<br /><br />
 
-      <!-- Colors -->
+			<!-- Colors -->
+			<div class="spinner-border text-warning" role="status">
+				<span class="visually-hidden"></span>
+			</div>
 
-      <br /><br />
+			<br /><br />
 
-      <!-- Growing Spinner -->
+			<!-- Growing Spinner -->
+			<div class="spinner-grow" role="status">
+				<span class="visually-hidden"></span>
+			</div>
 
-      <br /><br />
+			<br /><br />
 
-      <!-- Align Center -->
+			<!-- Align Center -->
+			<div class="d-flex justify-content-center">
+				<div class="spinner-border text-primary" role="status">
+					<span class="visually-hidden"></span>
+				</div>
+			</div>
 
-      <br /><br />
+			<br /><br />
 
-      <!-- Size -->
+			<!-- Size -->
+			<div
+				class="spinner-border spinner-border-sm text-info"
+				role="status">
+				<span class="visually-hidden"></span>
+			</div>
 
-      <br /><br />
+			<div
+				class="spinner-border spinner-border-sm text-info"
+				role="status"
+				style="height: 3rem; width: 3rem">
+				<span class="visually-hidden"></span>
+			</div>
 
-      <!-- In Buttons -->
+			<br /><br />
 
-      <!-- Don't go past here -->
-    </div>
-    <div style="margin-top: 350px"></div>
+			<!-- In Buttons -->
+			<button class="btn btn-primary">
+				<span class="spinner-border spinner-border-sm"></span>
+				Loading
+			</button>
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+			<!-- Don't go past here -->
+		</div>
+		<div style="margin-top: 350px"></div>
+
+		<script src="./assets/js/bootstrap.bundle.min.js"></script>
+	</body>
 </html>
