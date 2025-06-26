@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <title>Bootstrap Sandbox | Popovers & Tooltips</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-5">Popovers & Tooltips</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+		<title>Bootstrap Sandbox | Popovers & Tooltips</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="mb-5">Popovers & Tooltips</h1>
 
-      <!-- Popover -->
+			<!-- Popover -->
+			<button
+				class="btn btn-danger btn-lg"
+				id="myPopover"
+				data-bs-toggle="popover"
+				data-bs-title="Popover title"
+				data-bs-content="Popover content">
+				Toggle Popover
+			</button>
 
-      <br /><br />
+			<br /><br />
 
-      <!-- Tooltip -->
+			<!-- Tooltip -->
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				Repellat nobis numquam
+				<a href="" data-bs-toggle="tooltip" data-bs-title="Tooltip One"
+					>Tooltip one</a
+				>quae neque expedita, libero nisi quis officiis dolor<a
+					href=""
+					data-bs-toggle="tooltip"
+					data-bs-title="Tooltip One"
+					>Tooltip two</a
+				>
+				vero eum. Perferendis asperiores iste nulla?
+			</p>
 
-      <!-- Don't go past here -->
-    </div>
-    <div style="margin-top: 350px"></div>
+			<!-- Don't go past here -->
+		</div>
+		<div style="margin-top: 350px"></div>
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+		<script src="./assets/js/bootstrap.bundle.min.js"></script>
+		<script>
+			const popoverEl = document.querySelector("#myPopover");
+			const popover = new bootstrap.Popover(popoverEl);
+
+			const tooltipTriggerList = document.querySelectorAll(
+				'[data-bs-toggle="tooltip"]'
+			);
+			const tooltipList = [...tooltipTriggerList].map((t) => {
+				new bootstrap.Tooltip(t);
+			});
+		</script>
+	</body>
 </html>
